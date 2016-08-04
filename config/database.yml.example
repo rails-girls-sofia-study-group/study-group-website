@@ -1,0 +1,10 @@
+default: &default
+  adapter: postgresql
+
+development:
+  <<: *default
+  database: study_groups
+
+test:
+  <<: *default
+  database: study_groups_test
